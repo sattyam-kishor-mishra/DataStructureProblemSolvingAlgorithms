@@ -11,6 +11,7 @@ namespace DataStructureAlgorithms
         private readonly TimeSpan _window;
 
         private readonly ConcurrentDictionary<string, (int count, DateTime start)> _request = new ConcurrentDictionary<string, (int count, DateTime start)>();
+
         private readonly Dictionary<string, Queue<DateTime>> _responseTimes;
 
         public RateLimiter(int limit, TimeSpan window) 
@@ -24,19 +25,28 @@ namespace DataStructureAlgorithms
         public bool AllowRequest(string userId)
         {
             var now = DateTime.UtcNow;
+            Console.WriteLine($"Current time: {now}");
             var entry = _request.GetOrAdd(userId, (0, now));
+            Console.WriteLine($"Enter the Value in Entry Count: {entry.count} | Start Time: {entry.start}");
 
-            if(now - entry.start > _window)
+            Console.WriteLine($"{(now - entry.start).TotalSeconds} sec | Entry Count: {entry.count} | Start Time: {entry.start}");
+            if (now - entry.start > _window)
             {
+                Console.WriteLine($"{(now - entry.start).TotalSeconds} sec | Entry Count: {entry.count} | Start Time: {entry.start}");
                 entry = (0, now);
+                _request[userId] = entry;
+                Console.WriteLine($"Exceed time windows Request Count: {_request[userId].count} | Start Time: {_request[userId].start}");
+                return false;
             }
 
             if(entry.count + 1 > _limit)
             {
+                Console.WriteLine($"Exceed the Limit at : {(now - entry.start).TotalSeconds} sec | Entry Count: {entry.count} | Start Time: {entry.start} | Limit: {entry.count + 1}");
                 return false;
             }
 
             _request[userId] = (entry.count + 1, entry.start);
+            Console.WriteLine($"Final Request Count: {_request[userId].count} | Start Time: {_request[userId].start}");
             return true;    
         }
 

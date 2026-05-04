@@ -33,12 +33,44 @@
 
 
 
-var limiter = new RateLimiter(3, TimeSpan.FromSeconds(10));
+/* Rate Limiter Example */
+//var limiter = new RateLimiter(5, TimeSpan.FromSeconds(20));
 
-for (int i = 1; i <= 5; i++)
-{
-    bool allowed = limiter.AllowResponse("user1");
-    Console.WriteLine($"Request {i}: {(allowed ? "Allowed" : "Blocked")}");
-    System.Threading.Thread.Sleep(2000); // simulate delay
-}
+//for (int i = 1; i <= 10; i++)
+//{
+//    bool allowed = limiter.AllowRequest("user1");
+//    Console.WriteLine($"Request {i}: {(allowed ? "Allowed" : "Blocked")}\n");
+//    System.Threading.Thread.Sleep(2000); // simulate delay
+//}
 
+//for (int i = 1; i <= 5; i++)
+//{
+//    bool allowed = limiter.AllowResponse("user1");
+//    Console.WriteLine($"Request {i}: {(allowed ? "Allowed" : "Blocked")}");
+//    System.Threading.Thread.Sleep(2000); // simulate delay
+//}
+
+
+/*Recusrion Examples*/
+
+
+
+
+//var result = RecursionExamples.AddNumbers(input);
+//var result2 = RecursionExamples.Factorial(input);
+//var result3 = RecursionExamples.Fibonacci(input);
+
+//Console.WriteLine($"The sum of numbers up to {input} is: {result}\n");
+//Console.WriteLine($"The factorial of {input} is: {result2}\n");
+//Console.WriteLine($"The {input}th Fibonacci number is: {result3} \n"); 
+
+/*Reverse String Example*/
+
+Console.WriteLine("Enter the Number");
+var input = Console.ReadLine()!;
+
+var reversed = ReverseString.FunctionReverseString(input);
+Console.WriteLine($"Reversed string: {reversed}");
+
+var ispallindrom = ReverseString.FunctionPallindrom(input);
+Console.WriteLine($"Is palindrome: {ispallindrom}");
