@@ -19,22 +19,14 @@ namespace DataStructureAlgorithms
 
             for (int r = 0; r < s.Length; r++)
             {
-                char c = s[r];
-
-                // If character was seen before and is in current window, move left pointer
-                if (lastSeen.ContainsKey(c) && lastSeen[c] >= l)
+                char c = s[r];                
+                if (lastSeen.ContainsKey(c))
                 {
-                    l = lastSeen[c] + 1;
-                }
-
-                // Update the last seen position of current character
-                lastSeen[c] = r;
-
-                // Update result with current window size
+                    l = r;
+                }                
+                lastSeen[c] = r;                
                 result = Math.Max(result, r - l + 1);
             }
-
-            return result;
-        }
+            return result;        }
     }
 }

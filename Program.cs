@@ -7,9 +7,10 @@
 
 //int result = MaxSumSubArray.MaxSumSubArrayMethod(arr, k);
 
-//int result2 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcabcdebb");
+//int result2 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcadcrfg");
+//int result3 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcbcamnopqr");
 
-
+//Console.WriteLine($"The length of the longest substring without repeating characters is: {result2} | {result3}");
 //var frequencyMap = FrequencyMap.FunctionFrequencyMap("banana");
 
 //Console.WriteLine($"The maximum sum of a subarray of size {k} is: {result}");
@@ -66,11 +67,33 @@
 
 /*Reverse String Example*/
 
-Console.WriteLine("Enter the Number");
-var input = Console.ReadLine()!;
+//Console.WriteLine("Enter the Number");
+//var input = Console.ReadLine()!;
 
-var reversed = ReverseString.FunctionReverseString(input);
-Console.WriteLine($"Reversed string: {reversed}");
+//var reversed = ReverseString.FunctionReverseString(input);
+//Console.WriteLine($"Reversed string: {reversed}");
 
-var ispallindrom = ReverseString.FunctionPallindrom(input);
-Console.WriteLine($"Is palindrome: {ispallindrom}");
+//var ispallindrom = ReverseString.FunctionPallindrom(input);
+//Console.WriteLine($"Is palindrome: {ispallindrom}");
+
+
+/*Recursive String Problems Example*/
+
+
+
+//Console.WriteLine($"Enter the String");
+//var input = Console.ReadLine()!;
+//while(!string.IsNullOrEmpty(input))
+//{
+//    //input.FunctionReverseString();
+//    input.ReplaceCharacter();
+//    Console.WriteLine($"Enter the String");
+//    input = Console.ReadLine()!;
+//}
+
+
+
+//Console.WriteLine($"Sorted Array: {string.Join(", ", MissingElement.SortArray(new int[] { 4, 5, 2, 6, 8, 9, 7 }))}");
+
+
+Console.WriteLine(MaxSumSubArray.MinSubArrayLengthWithTargetValue(new int[] { 1, 2, 3, 4, 5 }, 9));
