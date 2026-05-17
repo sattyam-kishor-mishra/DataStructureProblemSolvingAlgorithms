@@ -96,4 +96,16 @@
 //Console.WriteLine($"Sorted Array: {string.Join(", ", MissingElement.SortArray(new int[] { 4, 5, 2, 6, 8, 9, 7 }))}");
 
 
-Console.WriteLine(MaxSumSubArray.MinSubArrayLengthWithTargetValue(new int[] { 1, 2, 3, 4, 5 }, 9));
+//Console.WriteLine(LongestSubsequenceArrayLength.LongestSubsequence(new int[] { 5, 2, 8, 6, 3, 6, 9, 5 }));
+
+var listCube = new List<Cube>
+{
+    new Cube { Length = 4, Width = 5, Height = 3},
+    new Cube { Length = 2, Width = 3, Height = 2},
+    new Cube { Length = 3, Width = 6, Height = 2},
+    new Cube { Length = 1, Width = 5, Height = 4},
+    new Cube { Length = 2, Width = 4, Height = 1},
+    new Cube { Length = 1, Width = 2, Height = 2}
+};
+
+Console.WriteLine(MaxHeight.FindMaxHeightOfCubes(listCube));
