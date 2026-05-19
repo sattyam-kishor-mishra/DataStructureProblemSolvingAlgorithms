@@ -1,0 +1,61 @@
+﻿Basic Traversal & Manipulation
+
+Reverse an array
+
+Rotate array (left/right, by k steps)
+
+Find min/max element
+
+Remove duplicates (sorted/unsorted)
+
+Searching & Sorting
+
+Binary search variations (first/last occurrence, count of element)
+
+Merge two sorted arrays
+
+QuickSort, MergeSort, HeapSort
+
+Find kth smallest/largest element
+
+Subarray & Sliding Window
+
+Maximum subarray sum (Kadane’s algorithm)
+
+Subarray with given sum
+
+Longest subarray with 0 sum
+
+Sliding window maximum/minimum
+
+Smallest subarray with sum ≥ target
+
+Two-Pointer Techniques
+
+Pair with given sum
+
+Triplet sum problems
+
+Move zeros to end
+
+Dutch National Flag problem (sort 0s, 1s, 2s)
+
+Matrix/2D Array
+
+Rotate matrix 90°
+
+Spiral traversal
+
+Search in sorted matrix
+
+Set matrix zeroes
+
+Advanced
+
+Maximum product subarray
+
+Trapping rainwater
+
+Largest rectangle in histogram
+
+Subarray XOR problems
