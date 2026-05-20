@@ -7,8 +7,8 @@
 
 //int result = MaxSumSubArray.MaxSumSubArrayMethod(arr, k);
 
-int result2 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcadcrfg");
-int result3 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcbcamnopqr");
+//int result2 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcadcrfg");
+//int result3 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubStringWithoutRepeatingCharacter("abcbcamnopqr");
 
 //Console.WriteLine($"The length of the longest substring without repeating characters is: {result2} | {result3}");
 //var frequencyMap = FrequencyMap.FunctionFrequencyMap("banana");
@@ -119,3 +119,5 @@ int result3 = LongestSubStringWithoutRepeatingCharacter.FunctionLongestSubString
 
 
 //ArrayProblems.RemoveDuplicateInArray(new int[] { 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 5, 5, 5, 5 });
+
+SmallestSubstringLength.FunctionSmallestSubstringLength("abdecbcbca", "abc");
