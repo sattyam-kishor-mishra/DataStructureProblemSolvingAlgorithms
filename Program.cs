@@ -120,4 +120,7 @@
 
 //ArrayProblems.RemoveDuplicateInArray(new int[] { 1, 1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 5, 5, 5, 5 });
 
-SmallestSubstringLength.FunctionSmallestSubstringLength("abdecbcbca", "abc");
+//SmallestSubstringLength.FunctionSmallestSubstringLength("abdecbcbca", "abc");
+
+
+ArrayProblems.MissingElementInAArray(new int[] { 1,2,3,5,6});

@@ -84,5 +84,28 @@ namespace DataStructureAlgorithms
             
 
         }
+
+        public static void MissingElementInAArray(int[] arr)
+        {
+            int r = 0;
+            int n = arr.Length;
+            for (int i = 0; i < n; i++)
+            {
+                int val = Math.Abs(arr[i]); 
+                if (val - 1 < n && arr[val - 1] > 0)
+                {
+                    arr[val - 1] = -arr[val - 1]; 
+                }
+            }
+
+            for (int i = 0; i<arr.Length; i++)
+            {
+                if (arr[i] > 0)
+                    r = arr[i];
+            }
+        }
+
+
+
     }
 }
